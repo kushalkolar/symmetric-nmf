@@ -11,13 +11,17 @@ A = np.array([
     [1, 1, 1, 0, 0, 0.5, 0.5, 0.5, 0.5], # partial membership
     [0, 0, 0, 1, 1, 0, 0, 0, 0],
     [0, 0, 0, 1, 1, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 1, 1, 1, 1],
-    [0, 0, 0, 0, 0, 1, 1, 1, 1],
-    [0, 0, 0, 0, 0, 1, 1, 1, 1],
-    [0, 0, 0, 0, 0, 1, 1, 1, 1],
+    [0, 0, 0.5, 0, 0, 1, 1, 1, 1],
+    [0, 0, 0.5, 0, 0, 1, 1, 1, 1],
+    [0, 0, 0.5, 0, 0, 1, 1, 1, 1],
+    [0, 0, 0.5, 0, 0, 1, 1, 1, 1],
 ])
 
-A += np.abs(np.random.normal(scale=0.15, size=A.size)).reshape(A.shape)
+# simulate some noise
+sigma = np.abs(np.random.normal(scale=0.1, size=A.size)).reshape(A.shape)
+# make symmetric and add noise
+noise = (sigma + sigma.T) / 2
+A += noise
 
 snmf = SymNMF(k=3)
 snmf.fit(A)
