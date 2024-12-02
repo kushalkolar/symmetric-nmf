@@ -6,6 +6,9 @@ import scipy.linalg as sla
 import time
 
 
+# vendored from https://github.com/kimjingu/nonnegfac-python
+
+
 def nnlsm_blockpivot(A, B, is_input_prod=False, init=None):
     """ Nonnegativity-constrained least squares with block principal pivoting method and column grouping
 
