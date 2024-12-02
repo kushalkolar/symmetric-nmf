@@ -9,4 +9,4 @@ Warning: Not rigourly tested yet, use at your own risk. Works with toy data, nee
 
 Symmetric NMF allows for soft clustering, for example see row 2 here which belongs to both cluster 1 and cluster 2.
 
-![Figure_1](https://github.com/user-attachments/assets/1b1415cf-267c-41e6-8e5d-14f1ae0a5afb)
+![Figure_1](https://github.com/user-attachments/assets/f8ea1498-54b1-435b-b9e2-e1f1a1208d2c)
