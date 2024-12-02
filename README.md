@@ -1,6 +1,10 @@
 # symmetric-nmf
 Symmetric NMF in python
 
-An attempt to implement Symmetric NMF in Python because I could not find a python implementation.
+Implemention of Symmetric NMF in Python because I could not find a python implementation.
 
 Based on https://github.com/dakuang/symnmf
+
+Warning: Not rigourly tested yet, use at your own risk. Works with toy data, need to verify with a diverse range of datasets before I can say that this works properly.
+
+![Figure_1](https://github.com/user-attachments/assets/1b1415cf-267c-41e6-8e5d-14f1ae0a5afb)
